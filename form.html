@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@300&display=swap');
+             
+            *{ 
+                font-family: 'Lexend Mega', sans-serif;
+                background: #4ECDC4;  
+background: -webkit-linear-gradient(to right, #556270, #4ECDC4); 
+background: linear-gradient(to right, #556270, #4ECDC4); 
+            }
+            li, a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 20px;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+.nav_links li a{
+
+    border-radius: 20px;
+}
+.nav_links li a:hover{
+    text-decoration: underline;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-radius: 20px;
+}
+input{
+    color: white;
+    border-radius: 20px;
+}
+form, fieldset, label{
+    color: white;
+    border-radius: 20px;
+    
+}
+form{
+    padding: 30px;
+    max-width: 700px;
+}
+legend{
+    text-align: center;
+    border-radius: 20px;
+}
+#botao{
+    text-align: right;
+    border-radius: 20px;
+}
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    
+                    <li><a href="form.html">Informações Check-In</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Data da Hospedagem</legend>
+                <div>
+                    <label>Check-In</label>
+                    <input type="date" name="check-in" required />
+                  </div>
+                <div>
+                    <label>Check-Out</label>
+                    <input type="date" name="check-out" required />
+                  </div>
+                  <div>
+                    <label>Crianças</label>
+                    <input type="number" name="numero-crianças" required />
+                  </div>
+                  </fieldset>
+                  <fieldset>
+                <legend>Tipo de Quarto</legend>
+                <div>
+                    <label>Solteiro</label>
+                    <input type="checkbox" value="quarto-solteiro" name="quarto-solteiro">
+                </div>
+                <div>
+                    <label>Casal</label>
+                    <input type="checkbox" value="quarto-casal" name="quarto-casal">
+                </div>
+                <div>
+                    <label>Suíte</label>
+                    <input type="checkbox" value="quarto-suite" name="quarto-suite">
+                </div>
+                <div>
+                    <label>Fumante</label>
+                    <input type="checkbox" value="fumante" name="fumante">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de Cama</legend>
+                <div>
+                    <label>Solteiro</label>
+                    <input type="checkbox" value="cama-solteiro" name="cama-solteiro">
+                </div>
+                <div>
+                    <label>Casal</label>
+                    <input type="checkbox" value="cama-casal" name="cama-casal">
+                </div>
+                <div>
+                    <label>Suíte</label>
+                    <input type="checkbox" value="Suíte" name="quarto-suite">
+                </div>
+            </fieldset>
+            
+                <div id="botao">
+                    <input type="submit" value="Checar Disponbilidade"/>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
